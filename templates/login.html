@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center"> Employee Login</h1>
+        <form action="/login" method="post">
+            
+            <div class="mb-3">
+                <label for="" class="form-label"> Email </label>
+                <input type="email" class="form-control" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> Password </label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <div class="mb-3">
+                <button type="submit" calss="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+{% endblock body %}
